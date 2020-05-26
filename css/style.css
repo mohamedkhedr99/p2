@@ -1,0 +1,417 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.seprator {
+  border: 1px solid #eee;
+}
+
+.clearfix {
+  clear: both;
+}
+
+body {
+}
+
+.container {
+  width: 1200px;
+  margin: auto;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar .links li {
+  font-weight: bold;
+  display: inline-block;
+  padding: 10px 0px;
+  margin: 0 10px;
+  text-transform: uppercase;
+  border-bottom: 2px solid transparent;
+}
+
+.navbar .links li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar .links li.active a,
+.navbar .links li a:hover {
+  color: #1e7a66;
+}
+
+.navbar .links li.active,
+.navbar .links li:hover {
+  border-bottom: 2px solid #1e7a66;
+}
+
+.navbar {
+  color: #fff;
+  height: 0;
+  font-size: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.navbar .brand {
+  text-transform: uppercase;
+  width: 40%;
+  float: left;
+}
+
+.navbar .links {
+  margin-top: 15px;
+  width: 60%;
+  float: left;
+}
+
+.header p {
+  color: #888;
+}
+
+.header {
+  background: url(../img/photograph-of-a-woman-in-a-coffee-shop-1002740.jpg);
+  position: relative;
+}
+
+.header .overlay {
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+  text-align: center;
+  margin-top: 500px;
+}
+
+.header .overlay h1 {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.bx-wrapper {
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+
+.overlay1 .overlay2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.services {
+  padding: 80px 20px 40px;
+}
+.services h2 {
+  font-weight: normal;
+}
+
+.services .item {
+  float: left;
+  width: 33.33333%;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.services .item i {
+  color: #1e7a66;
+  float: left;
+  width: 20%;
+  margin-right: 5%;
+}
+
+.services .item .info {
+  float: left;
+  width: 75%;
+}
+
+.services .item .info h3 {
+  font-weight: normal;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.services .item .info p {
+  margin-top: 0;
+  color: #888;
+}
+
+.special-heading {
+  position: relative;
+}
+
+.special-heading::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 40px;
+  border-bottom: 2px solid #333;
+}
+
+.ourteam {
+  padding: 40px 20px 40px;
+}
+
+.ourteam h2 {
+  font-weight: normal;
+}
+
+.ourteam .box {
+  float: left;
+}
+
+.ourteam .box:first-child {
+  width: 35%;
+}
+
+.ourteam .box:not(:first-child) {
+  width: 15.25%;
+  text-align: right;
+  margin-left: 1%;
+  position: relative;
+  transition: all 1s ease-in-out;
+}
+
+.ourteam .box p {
+  color: #888;
+  line-height: 1.8;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.ourteam .box h2 {
+  padding: 0 0 15px;
+}
+
+.ourteam .box:not(:first-child) img {
+  width: 100%;
+}
+
+.ourteam .box:not(:first-child) .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(30, 122, 102, 0.9);
+  line-height: 183px;
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  display: none;
+}
+
+.ourteam .box:not(:first-child):hover .overlay {
+  display: block;
+}
+
+.testm {
+  background: url(../client/adult-beverage-black-coffee-breakfast-374592.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  height: 400px;
+  position: relative;
+  text-align: center;
+  padding: 80px 0;
+}
+
+.testm .testoverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.testm h2 {
+  font-size: 40px;
+  margin: 80px 0 10px;
+}
+
+.testm q {
+  font-size: 20px;
+  line-height: 2;
+  color: #888;
+  display: block;
+  margin-top: 60px;
+}
+.testm p {
+  font-size: 30px;
+  color: #1e7a66;
+}
+
+.testm .slider > div {
+  display: none;
+}
+
+.testm .slider .active {
+  display: block;
+}
+
+.ourprojects {
+  padding: 60px 0;
+}
+
+.ourprojects h2 {
+  font-weight: normal;
+}
+.ourprojects ul {
+  margin-top: 50px;
+}
+.ourprojects ul li {
+  display: inline-block;
+  border: 2px solid #aaa;
+  padding: 10px;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+.ourprojects ul li.selected {
+  border: 1px solid #1e7a66;
+  background-color: #1e7a66;
+  color: #fff;
+}
+
+.ourprojects .gallery {
+  margin-top: 50px;
+  overflow: hidden;
+}
+
+.ourprojects .gallery .row > div {
+  width: 32.66666%;
+  float: left;
+  margin-bottom: 12px;
+  position: relative;
+}
+
+.ourprojects .gallery .row > div img {
+  width: 100%;
+}
+
+.ourprojects .gallery .row > div:nth-child(2) {
+  margin-right: 1%;
+  margin-left: 1%;
+}
+
+.ourprojects .gallery .row > div .over {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(30, 122, 102, 0.9);
+  line-height: 232px;
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  display: none;
+}
+
+.ourprojects .gallery .row > div .heart {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  color: #fff;
+  display: none;
+}
+
+.ourprojects .gallery .row > div:hover .over,
+.ourprojects .gallery .row > div:hover .heart {
+  display: block;
+}
+
+.ourprojects #Container .mix {
+  display: none;
+}
+
+.ourprojects .shuffle li {
+  cursor: pointer;
+}
+
+.footer {
+  background-color: #232323;
+  color: #6c6c6c;
+  padding: 40px 0;
+  overflow: hidden;
+}
+
+.footer .col {
+  width: 25%;
+  float: left;
+}
+
+.footer .col h2 {
+  color: #fff;
+  font-weight: normal;
+  font-size: 18px;
+}
+
+.footer .col p {
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.footer .col i {
+  display: inline-block;
+  color: #ccc;
+  border: 1px solid #6c6c6c;
+  padding: 10px;
+  width: 40px;
+}
+
+.footer .copyright {
+  margin-top: 30px;
+}
+
+.footer .tags span {
+  display: inline-block;
+  color: #ccc;
+  border: 1px solid #6c6c6c;
+  padding: 10px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+}
+.footer .recent div {
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+.footer .recent div img {
+  float: left;
+  margin-right: 10px;
+}
+
+.footer .recent div h4 {
+  color: #ccc;
+  font-weight: normal;
+  margin: 6px 0;
+}
+
+.footer .blog ul li {
+  color: #ccc;
+  padding: 15px;
+  border-bottom: 1px solid #979797;
+}
